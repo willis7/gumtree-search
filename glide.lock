@@ -1,0 +1,9 @@
+hash: f92ed44aeea798163d1d5f8245fcec2cd07d2d2895d3c45cfb2b7b082a3df53b
+updated: 2018-03-06T14:23:49.091482Z
+imports:
+- name: golang.org/x/net
+  version: d25186b37f34ebdbbea8f488ef055638dfab272d
+  subpackages:
+  - html
+  - html/atom
+testImports: []
