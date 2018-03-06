@@ -4,8 +4,7 @@ Takes search terms, and location and returns a list of URLs for that given searc
 
 ## Usage
 
-
-```
+``` bash
 $ go run main.go "<location>" "<search-category>" "<search-query>"...
 e.g. go run main.go "London" "all" "some cool item1" "some cool item2"...
 ```
@@ -13,6 +12,18 @@ e.g. go run main.go "London" "all" "some cool item1" "some cool item2"...
 ### Limitations
 
 The application doesn't support multiple search categories. Therefore, it's advised to use `all` unless you're confident all of the search queries belong to the same supplied search category.
+
+## Docker
+
+The easiest way to run is using docker. You wont need to install Go and the dependencies are handled in the `Dockerfile`.
+
+### Docker build
+
+`docker build --rm -t willis7/gumtree-searcher .`
+
+### Docker run
+
+`docker run -it willis7/gumtree-searcher "<location>" "<search-category>" "<search-query>"...`
 
 ## TODO
 
@@ -25,5 +36,5 @@ The application doesn't support multiple search categories. Therefore, it's advi
 * [ ] add time since post
 * [ ] add email/sms support
 * [ ] deploy serverless
-* [ ] docker support
-* [ ] makefile
+* [x] docker support
+* [x] makefile
