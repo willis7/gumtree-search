@@ -30,7 +30,7 @@ The easiest way to run is using docker. You wont need to install Go and the depe
 * [x] os args
 * [x] multiple searches
 * [x] concurrent searches
-* [ ] write output to file
+* [x] write output to file
 * [ ] check for existing output file and ignore duplicates
 * [ ] remove expired
 * [ ] add time since post
